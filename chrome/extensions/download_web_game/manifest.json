@@ -1,0 +1,22 @@
+{
+  "name": "download web game",
+  "version": "1.0",
+  "minimum_chrome_version": "17.0",
+  "description": "download web game resource",
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webNavigation",
+    "management",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "background": { "scripts": ["background.js"] },
+  // "background_page": "backgroundPage.html",
+  "browser_action":{
+    "default_icon":"icon.png",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
